@@ -1,4 +1,4 @@
-# 👷 `worker-template` Hello World
+# 👷 `worker-template` Building rewrites and redirects for folders.com
 
 A template for kick starting a Cloudflare worker project.
 
