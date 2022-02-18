@@ -3,7 +3,7 @@ type = "javascript"
 
 account_id = "15fab8531e3ea3674dd56c192d118b09"
 workers_dev = true
-route = "https://www.folders.com/*"
+route = "https://www.folders.com/asdf/test/*"
 zone_id = "cfca64a095fdc2a382d55a6748c49b1f"
 compatibility_date = "2022-02-17"
 kv_namespaces = [ 
