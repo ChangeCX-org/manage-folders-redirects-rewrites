@@ -1,0 +1,12 @@
+name = "manage-folders-redirects-rewrites"
+type = "javascript"
+
+account_id = "15fab8531e3ea3674dd56c192d118b09"
+workers_dev = true
+route = "https://www.folders.com/*"
+zone_id = "cfca64a095fdc2a382d55a6748c49b1f"
+compatibility_date = "2022-02-17"
+kv_namespaces = [ 
+  { binding = "FOLDER_REWRITE_MAP", id = "08b8bb73fe8d4d9b92974d16b4c698ab" },
+  { binding = "FOLDER_REDIRECT_MAP", id = "b60ce5f5cb2c4431a5f1e38218db1284" }
+]
