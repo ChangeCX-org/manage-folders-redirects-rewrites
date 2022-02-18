@@ -28,24 +28,23 @@ async function handleRequest(request) {
     if(params.toString() != "") {
       urlVal = urlVal + "?" + params.toString()
     }
-    console.log("(Folders Redirect) The Query String to be apppended to urlVal "+params.toString())        
+    console.log("(Redirect) The Query String to be apppended to urlVal "+params.toString())    
+    console.log("The Redirect URL to be redirected is "+urlVal)
     isRedirectPath = true
+    
   }
   else if(value) {
     urlVal = "https://"+urlPath.host+value
     if(params.toString() != "") {
       urlVal = urlVal + "?" + params.toString()
     }
-    console.log("(Folders Rewrite) The Query String to be apppended to urlVal "+params.toString())            
+    console.log("(Rewrite) The Query String to be apppended to urlVal "+params.toString())        
+    console.log("The Rewrite URL to be redirected is "+urlVal)
     isRewrite = true
-  }  else {
+  }  else {    
     urlVal = request.url
-    //Append params to urlVal if params is not empty
-    if(params.toString() != "") {
-      urlVal = urlVal + "?" + params.toString()
-    }
-    console.log("The Folders Query String to be apppended to urlVal "+params.toString())
-    console.log("Since no path matched (Folders) sending to URL Val"+urlVal)    
+    console.log("The Query String to be apppended to urlVal "+params.toString())
+    console.log("Since no path matched sending to URL Val"+urlVal)    
   }
   if(isRewrite) {
     return fetch(new Request(urlVal, {
